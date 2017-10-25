@@ -1,0 +1,27 @@
+<section>
+  <div class="container">
+    <h1 style="color: #595959">{{name}}</h1>
+    <table class="table">
+    <thead class="thead-inverse">
+      <tr>
+        <th>#</th>
+        <th>Unit measure</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Subtotal</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="detail in details">
+        <th>{{detail.documento_detalle_id}}</th>
+        <td>{{detail.unidad_medida}}</td>
+        <td>{{detail.precio}}</td>
+        <td>{{detail.cantidad}}</td>
+        <td>{{detail.subtotal}}</td>
+        <td>{{detail.descripcion}}</td>
+      </tr>
+    </tbody>
+    </table>
+  </div>
+</section>

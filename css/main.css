@@ -1,0 +1,73 @@
+body{
+  background-color: #F7F7F7 !important;
+}
+
+section{
+  background-color: #F7F7F7 !important;
+}
+
+nav{
+  background-color: #5c6770 !important;
+}
+
+.nav-link{
+  color: white !important;
+}
+
+.home-container{
+  margin-top: 10vh;
+}
+
+.form-container{
+  margin: 10vh 20vw 0px 20vw;
+}
+
+.home-options{
+  text-align:center;
+}
+
+.home-options.add > h1{
+    color: #32C05C;
+}
+
+.home-options.add > h1 > a{
+  color: inherit;
+}
+
+.home-options.add > h1 > a:hover{
+     color:#1f7a3a;
+     text-decoration:none;
+     cursor:pointer;
+}
+
+.home-options.edit > h1{
+    color: #fcca36;
+}
+
+.home-options.edit > h1 > a{
+  color: inherit;
+}
+
+.home-options.edit > h1 > a:hover{
+     color:#c99703;
+     text-decoration:none;
+     cursor:pointer;
+}
+
+.home-options.delete > h1{
+    color: #ff4d4d;
+}
+
+.home-options.delete > h1 > a{
+  color: inherit;
+}
+
+.home-options.delete > h1 > a:hover{
+     color:#e60000;
+     text-decoration:none;
+     cursor:pointer;
+}
+
+.thead-inverse > tr > th{
+  background-color:#5C6770 !important;
+}
