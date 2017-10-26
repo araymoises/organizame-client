@@ -21,7 +21,7 @@ angular.module('App', ['ngRoute'])
      if (!logged) {
        $location.path('/login');
      }
-     $http.get('http://localhost:7000/api/history')
+     $http.get('http://localhost:8000/api/history')
       .success(function(data, status, headers, config) {
         $scope.documents = data;
       })
@@ -38,7 +38,7 @@ angular.module('App', ['ngRoute'])
        $location.path('/login');
      }
      $scope.params = $routeParams;
-     $http.get('http://localhost:7000/api/history/' + $scope.params.documentId)
+     $http.get('http://localhost:8000/api/history/' + $scope.params.documentId)
       .success(function(data, status, headers, config) {
         $scope.details = data;
         console.log(data);
@@ -80,7 +80,7 @@ angular.module('App', ['ngRoute'])
         console.log($scope.document);
         console.log('details');
         console.log(details);
-        $http.post('http://localhost:7000/api/history/', $scope.document)
+        $http.post('http://localhost:8000/api/history/', $scope.document)
           .success(function(data, status, headers, config) {
             console.log(data);
             console.log('bien');
@@ -122,7 +122,7 @@ angular.module('App', ['ngRoute'])
        $location.path('/login');
      }
      $scope.params = $routeParams;
-     $window.open('http://localhost:7000/pdf/'+$scope.params.documentId, '_blank');
+     $window.open('http://localhost:8000/pdf/'+$scope.params.documentId, '_blank');
  })
  .controller('LogoutController', function($location, $window, $scope, $routeParams, $http) {
      logged = false;
